@@ -112,7 +112,7 @@ function buildPesan() {
   var lokasi = document.getElementById('bLoc').value    || '-';
   var catatan = document.getElementById('bNotes').value;
 
-  var pesan = '🔔 *PESANAN BARU — Massage & Reflexology Ber217An*\n\n';
+  var pesan = '🔔 *PESANAN BARU — Massage & Reflexology BER 217 AN*\n\n';
   pesan += '• *Treatment* : ' + treat + '\n';
   pesan += '• *Durasi*    : ' + selectedDur + '\n';
   pesan += '• *Nama*      : ' + nama + '\n';
