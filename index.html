@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage & Reflexology 217 An — Home Service Bali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#beranda" class="nav-logo">217<span>An</span></a>
+      <ul class="nav-links">
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#ulasan">Ulasan</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#booking" class="nav-cta">Pesan Sekarang</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#layanan" onclick="closeMobile()">Layanan</a>
+      <a href="#tentang" onclick="closeMobile()">Tentang</a>
+      <a href="#ulasan" onclick="closeMobile()">Ulasan</a>
+      <a href="#lokasi" onclick="closeMobile()">Lokasi</a>
+      <a href="#booking" onclick="closeMobile()">Pesan Sekarang</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="beranda">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Home Service · Bali</div>
+      <h1>Massage &amp;<br><em>Reflexology</em><br>217 An</h1>
+      <p class="hero-desc">Terapis profesional kami datang langsung ke villa, hotel, atau rumah Anda di Bali. Nikmati perawatan tubuh terbaik tanpa perlu keluar.</p>
+      <div class="hero-badge-row">
+        <div class="badge"><span class="badge-dot"></span>Buka Setiap Hari</div>
+        <div class="badge">10.00 AM – 11.00 PM</div>
+        <div class="badge cancel-badge">Biaya Batal: Rp 50.000/terapis</div>
+      </div>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">Pesan Sekarang</a>
+        <a href="#layanan" class="btn-ghost">Lihat Layanan</a>
+      </div>
+    </div>
+    <div class="hero-deco">217</div>
+  </section>
+
+  <!-- LAYANAN / TREATMENT -->
+  <section class="layanan" id="layanan">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Menu Layanan</div>
+        <h2>Massage <em>Treatment</em></h2>
+        <p class="section-desc">Semua treatment dilakukan oleh terapis bersertifikat di lokasi Anda.</p>
+        <div class="cancel-info">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Biaya pembatalan: <strong>Rp 50.000 per terapis</strong>
+        </div>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs" id="filterTabs">
+        <button class="tab active" data-filter="all">Semua</button>
+        <button class="tab" data-filter="massage">Massage</button>
+        <button class="tab" data-filter="spesial">Spesial</button>
+        <button class="tab" data-filter="bekam">Bekam</button>
+      </div>
+
+      <div class="treatment-grid" id="treatmentGrid">
+
+        <!-- 01 Balinese -->
+        <div class="treat-card" data-cat="massage">
+          <div class="treat-num">01</div>
+          <div class="treat-body">
+            <h3>Balinese Massage</h3>
+            <p>Teknik pijat tradisional Bali yang memadukan pijatan lembut, akupresur, dan minyak aromaterapi.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 200.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 300.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 400.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 02 Aromatherapy -->
+        <div class="treat-card" data-cat="massage">
+          <div class="treat-num">02</div>
+          <div class="treat-body">
+            <h3>Aromatherapy Massage</h3>
+            <p>Pijatan menenangkan menggunakan minyak esensial pilihan untuk merelaksasi pikiran dan tubuh.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 225.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 325.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 425.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 03 Thai -->
+        <div class="treat-card" data-cat="massage">
+          <div class="treat-num">03</div>
+          <div class="treat-body">
+            <h3>Thai Massage</h3>
+            <p>Teknik peregangan dan penekanan titik akupresur khas Thailand untuk melepas ketegangan otot dalam.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 300.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 425.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 550.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 04 Deep Tissue -->
+        <div class="treat-card" data-cat="massage">
+          <div class="treat-num">04</div>
+          <div class="treat-body">
+            <h3>Deep Tissue Massage</h3>
+            <p>Tekanan dalam yang menargetkan lapisan otot lebih dalam untuk melepaskan ketegangan kronis.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 300.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 425.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 550.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 05 Four Hand -->
+        <div class="treat-card spesial" data-cat="spesial">
+          <div class="treat-badge">Populer</div>
+          <div class="treat-num">05</div>
+          <div class="treat-body">
+            <h3>Four Hand Massage</h3>
+            <p class="treat-sub-note">2 terapis · 1 pelanggan</p>
+            <p>Dua terapis bekerja secara bersamaan dan sinkron untuk pengalaman full-body yang luar biasa.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 400.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 600.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 800.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 06 Couple -->
+        <div class="treat-card spesial" data-cat="spesial">
+          <div class="treat-badge">Populer</div>
+          <div class="treat-num">06</div>
+          <div class="treat-body">
+            <h3>Couple Massage</h3>
+            <p class="treat-sub-note">2 terapis · 2 pelanggan</p>
+            <p>Nikmati momen relaksasi bersama pasangan dengan dua terapis yang hadir bersamaan.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 400.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 600.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 800.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 07 Reflexology -->
+        <div class="treat-card" data-cat="massage">
+          <div class="treat-num">07</div>
+          <div class="treat-body">
+            <h3>Reflexology</h3>
+            <p>Terapi tekanan pada titik refleksi kaki untuk memulihkan keseimbangan dan meningkatkan sirkulasi.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 200.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 300.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 400.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 08 Lomi Lomi -->
+        <div class="treat-card" data-cat="spesial">
+          <div class="treat-num">08</div>
+          <div class="treat-body">
+            <h3>Lomi Lomi Massage</h3>
+            <p>Pijat penyembuhan ala Hawaii dengan gerakan lengan panjang dan mengalir untuk relaksasi mendalam.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 250.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 375.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 500.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 09 Lymphatic -->
+        <div class="treat-card" data-cat="spesial">
+          <div class="treat-num">09</div>
+          <div class="treat-body">
+            <h3>Lymphatic Drainage Massage</h3>
+            <p>Teknik ritmis lembut untuk merangsang sistem limfatik, mengurangi pembengkakan dan meningkatkan imun.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 450.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 650.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 850.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 10 Madero -->
+        <div class="treat-card" data-cat="spesial">
+          <div class="treat-num">10</div>
+          <div class="treat-body">
+            <h3>Madero Massage</h3>
+            <p>Terapi kayu (wood therapy) yang membentuk tubuh dan mengaktifkan metabolisme secara alami.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 450.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 650.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 850.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 11 Massage + Scrub -->
+        <div class="treat-card" data-cat="spesial">
+          <div class="treat-num">11</div>
+          <div class="treat-body">
+            <h3>Massage + Scrub</h3>
+            <p>Kombinasi pijat full body dan lulur herbal tradisional untuk kulit lebih cerah dan halus.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 250.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 375.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 500.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 12 Bekam Kering -->
+        <div class="treat-card" data-cat="bekam">
+          <div class="treat-num">12</div>
+          <div class="treat-body">
+            <h3>Bekam Kering <span class="treat-en">Dry Cupping</span></h3>
+            <p>Terapi bekam tanpa sayatan menggunakan cangkir hisap untuk melepas ketegangan dan meningkatkan sirkulasi.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 250.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 350.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 450.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 13 Bekam Basah -->
+        <div class="treat-card" data-cat="bekam">
+          <div class="treat-num">13</div>
+          <div class="treat-body">
+            <h3>Bekam Basah <span class="treat-en">Wet Cupping</span></h3>
+            <p>Bekam dengan sayatan kecil (hijama) untuk detoksifikasi dan mempercepat proses penyembuhan alami tubuh.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 300.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 400.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 500.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+        <!-- 14 Sport -->
+        <div class="treat-card" data-cat="massage">
+          <div class="treat-num">14</div>
+          <div class="treat-body">
+            <h3>Sport Massage</h3>
+            <p>Pijat fokus untuk pemulihan atlet, pencegahan cedera, dan peningkatan fleksibilitas otot.</p>
+            <div class="treat-prices">
+              <div class="price-row"><span>60 menit</span><span>Rp 300.000</span></div>
+              <div class="price-row"><span>90 menit</span><span>Rp 425.000</span></div>
+              <div class="price-row"><span>120 menit</span><span>Rp 550.000</span></div>
+            </div>
+          </div>
+          <a href="#booking" class="treat-book">Pesan →</a>
+        </div>
+
+      </div><!-- end grid -->
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="tentang" id="tentang">
+    <div class="container tentang-grid">
+      <div class="tentang-visual">
+        <div class="stat-box">
+          <div class="stat-item"><span class="stat-n">14+</span><span class="stat-l">Jenis Treatment</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-item"><span class="stat-n">500+</span><span class="stat-l">Pelanggan Puas</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-item"><span class="stat-n">⭐ 5.0</span><span class="stat-l">Rating Google</span></div>
+        </div>
+        <div class="jam-box">
+          <div class="jam-label">Jam Operasional</div>
+          <div class="jam-time">10.00 AM – 11.00 PM</div>
+          <div class="jam-sub">Buka setiap hari</div>
+        </div>
+      </div>
+      <div class="tentang-text">
+        <div class="section-tag left">Tentang Kami</div>
+        <h2>Spa Premium<br><em>Home Service</em><br>di Bali</h2>
+        <div class="divider"></div>
+        <p>Massage &amp; Reflexology 217 An hadir untuk membawa pengalaman spa terbaik langsung ke lokasi Anda di Bali — villa, hotel, atau rumah.</p>
+        <p>Terapis kami bersertifikat dan berpengalaman dalam berbagai teknik — dari pijat tradisional Bali hingga terapi modern — sehingga Anda bisa bersantai sepenuhnya di tempat yang paling nyaman bagi Anda.</p>
+        <ul class="tentang-list">
+          <li>✓ Terapis bersertifikat &amp; berpengalaman</li>
+          <li>✓ Peralatan lengkap dibawa terapis</li>
+          <li>✓ Menjangkau seluruh wilayah Bali</li>
+          <li>✓ Konfirmasi booking cepat via WhatsApp</li>
+        </ul>
+        <a href="#booking" class="btn-primary">Pesan Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARA KERJA -->
+  <section class="cara-kerja">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Mudah &amp; Praktis</div>
+        <h2>Cara <em>Booking</em></h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h4>Pilih Treatment</h4>
+          <p>Pilih jenis layanan dan durasi yang sesuai kebutuhan Anda dari menu di atas.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h4>Isi Form Booking</h4>
+          <p>Masukkan nama, nomor WA, alamat villa/hotel, tanggal dan jam yang diinginkan.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h4>Konfirmasi via WA</h4>
+          <p>Pesanan otomatis terkirim ke WhatsApp kami. Konfirmasi dalam 5–15 menit.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h4>Terapis Datang</h4>
+          <p>Terapis datang tepat waktu ke lokasi Anda. Silakan bersantai!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ULASAN -->
+  <section class="ulasan" id="ulasan">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Ulasan Tamu</div>
+        <h2>Kata Mereka <em>Tentang Kami</em></h2>
+      </div>
+      <div class="ulasan-grid">
+        <div class="ulasan-card">
+          <div class="ulasan-stars">★★★★★</div>
+          <p>"Pengalaman luar biasa! Terapis datang tepat waktu dan balinese massage-nya benar-benar memuaskan. Sangat profesional dan ramah. Pasti pesan lagi!"</p>
+          <div class="ulasan-author">
+            <div class="ulasan-avatar">AR</div>
+            <div><strong>Anisa R.</strong><br><span>Jakarta · Balinese Massage</span></div>
+          </div>
+        </div>
+        <div class="ulasan-card">
+          <div class="ulasan-stars">★★★★★</div>
+          <p>"Couple massage kami di sini benar-benar tak terlupakan. Dua terapis datang bersamaan, pelayanan sangat baik, dan harganya sangat sepadan untuk kualitas sebagus ini."</p>
+          <div class="ulasan-author">
+            <div class="ulasan-avatar">DH</div>
+            <div><strong>Dewi &amp; Hendra</strong><br><span>Surabaya · Couple Massage</span></div>
+          </div>
+        </div>
+        <div class="ulasan-card">
+          <div class="ulasan-stars">★★★★★</div>
+          <p>"Four hand massage-nya luar biasa — tidak pernah merasakan yang seperti ini sebelumnya. Booking lewat WhatsApp sangat mudah dan responsnya cepat. Highly recommended!"</p>
+          <div class="ulasan-author">
+            <div class="ulasan-avatar">BW</div>
+            <div><strong>Budi W.</strong><br><span>Bandung · Four Hand Massage</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="google-cta">
+        <p>Sudah pernah menggunakan layanan kami?</p>
+        <a href="https://maps.app.goo.gl/ZKEviHgpx7fKjDdm6" target="_blank" class="btn-ghost">
+          ⭐ Tulis Ulasan di Google
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOKASI -->
+  <section class="lokasi" id="lokasi">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Lokasi</div>
+        <h2>Temukan <em>Kami</em></h2>
+        <p class="section-desc">Berbasis di Bali — terapis kami siap menjangkau villa, hotel, atau rumah Anda.</p>
+      </div>
+      <div class="lokasi-grid">
+        <div class="lokasi-info">
+          <div class="loc-item">
+            <div class="loc-icon">📍</div>
+            <div>
+              <strong>Lokasi Kami</strong>
+              Sibang Gede, Kec. Abiansemal,<br>Kabupaten Badung, Bali
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon">🕙</div>
+            <div>
+              <strong>Jam Buka</strong>
+              Setiap hari, 10.00 AM – 11.00 PM
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon">📱</div>
+            <div>
+              <strong>WhatsApp</strong>
+              +62 817-7081-8567
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon">🏝️</div>
+            <div>
+              <strong>Area Layanan</strong>
+              Seluruh wilayah Bali
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/ZKEviHgpx7fKjDdm6" target="_blank" class="btn-primary">
+            Buka di Google Maps →
+          </a>
+        </div>
+        <div class="peta">
+          <iframe
+            src="https://www.google.com/maps?q=-8.5175905227661,115.26338195801&z=15&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Pesan Sekarang</div>
+        <h2>Formulir <em>Booking</em></h2>
+        <p class="section-desc">Isi form di bawah — pesanan langsung terkirim ke WhatsApp kami.</p>
+      </div>
+      <div class="booking-wrap">
+        <div class="form-box">
+
+          <div class="field">
+            <label>Pilih Treatment</label>
+            <select id="bTreat">
+              <option value="">— Pilih treatment —</option>
+              <optgroup label="Massage">
+                <option>Balinese Massage</option>
+                <option>Aromatherapy Massage</option>
+                <option>Thai Massage</option>
+                <option>Deep Tissue Massage</option>
+                <option>Reflexology</option>
+                <option>Lomi Lomi Massage</option>
+                <option>Sport Massage</option>
+              </optgroup>
+              <optgroup label="Spesial">
+                <option>Four Hand Massage (2 terapis)</option>
+                <option>Couple Massage (2 terapis)</option>
+                <option>Lymphatic Drainage Massage</option>
+                <option>Madero Massage</option>
+                <option>Massage + Scrub</option>
+              </optgroup>
+              <optgroup label="Bekam">
+                <option>Bekam Kering (Dry Cupping)</option>
+                <option>Bekam Basah (Wet Cupping)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Durasi</label>
+            <div class="dur-row">
+              <div class="dur-btn selected" data-dur="60 menit">60 menit</div>
+              <div class="dur-btn" data-dur="90 menit">90 menit</div>
+              <div class="dur-btn" data-dur="120 menit">120 menit</div>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="field">
+              <label>Nama Lengkap</label>
+              <input type="text" id="bName" placeholder="Nama kamu">
+            </div>
+            <div class="field">
+              <label>Nomor WhatsApp</label>
+              <input type="text" id="bWa" placeholder="+62 / 08xx">
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="field">
+              <label>Tanggal</label>
+              <input type="date" id="bDate">
+            </div>
+            <div class="field">
+              <label>Jam Mulai (10AM–11PM)</label>
+              <input type="time" id="bTime" min="10:00" max="23:00">
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Lokasi (Villa / Hotel / Alamat lengkap)</label>
+            <textarea id="bLoc" placeholder="Nama villa/hotel + alamat lengkap di Bali"></textarea>
+          </div>
+
+          <div class="field">
+            <label>Preferensi Terapis</label>
+            <div class="gender-row">
+              <div class="gender-btn sel" data-g="Bebas">Bebas</div>
+              <div class="gender-btn" data-g="Terapis Wanita">Wanita</div>
+              <div class="gender-btn" data-g="Terapis Pria">Pria</div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Catatan Tambahan (opsional)</label>
+            <input type="text" id="bNotes" placeholder="Contoh: fokus di punggung, alergi minyak tertentu, dll">
+          </div>
+
+          <button class="btn-book" onclick="sendBooking()">Kirim Booking via WhatsApp →</button>
+
+          <div class="wa-preview-wrap">
+            <div class="wa-label">Preview pesan yang akan terkirim ke admin:</div>
+            <div class="wa-bubble" id="waPreview">Isi form di atas untuk melihat preview pesan...</div>
+          </div>
+
+          <div class="success-msg" id="successMsg">
+            ✅ <strong>Booking terkirim!</strong> WhatsApp terbuka — silakan kirim pesannya. Kami akan konfirmasi dalam 5–15 menit.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">217<span>An</span></div>
+        <p>Massage &amp; Reflexology 217 An<br>Home Service Bali · Buka 10.00 AM–11.00 PM Setiap Hari</p>
+        <a href="https://maps.app.goo.gl/ZKEviHgpx7fKjDdm6" target="_blank" class="footer-maps">📍 Lihat di Google Maps</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-h">Layanan</div>
+        <a href="#booking">Balinese Massage</a>
+        <a href="#booking">Aromatherapy</a>
+        <a href="#booking">Thai Massage</a>
+        <a href="#booking">Four Hand Massage</a>
+        <a href="#booking">Couple Massage</a>
+        <a href="#booking">Bekam / Cupping</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-h">Kontak</div>
+        <a href="#lokasi">📍 Sibang Gede, Badung, Bali</a>
+        <a href="https://wa.me/6281770818567">📱 +62 817-7081-8567</a>
+        <a href="#lokasi">🕙 10.00 AM – 11.00 PM</a>
+        <a href="https://maps.app.goo.gl/ZKEviHgpx7fKjDdm6" target="_blank">⭐ Tulis Ulasan Google</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Massage &amp; Reflexology 217 An · Bali · Home Service
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
